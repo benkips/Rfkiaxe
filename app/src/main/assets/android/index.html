@@ -1,0 +1,90 @@
+	<html>
+	<title>Christian Union Karu</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: http://karucu.com 'unsafe-eval'; form-action 'self' *.karucu.com; 
+	style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:; script-src 'self' 'unsafe-inline';">
+	<head>
+		<style>
+			*{margin:0; -webkit-user-select:none;}
+			
+			body{ background:#F8F8FF; font-family:font-size:16px;font-family:georgia; }
+			.nav{ background:#3CB371;height:200px;text-align:center;color:#fff;padding:20px;text-shadow:; }
+			.bottomdiv{ background:transparent;margin-top:-50px;padding:10px; }
+			.card{ background:#fff;max-width:200px;height:120px;box-shadow:0px 1px 3px #ccc;margin:0 auto;padding:10px;color:#2c2424;text-align:center;}
+			.cardv{ background:#fff;min-height:50px;box-shadow:0px 1px 3px #ccc;margin:0 auto;padding:10px;}
+		</style>
+	
+	</head>
+	<body>
+		<div class="nav"><br>
+			<h2>Karatina University<br> Christian Union</h2><br>
+			<p>Welcome to our Union where we are commited to serve the Lord.</p>
+		</div>
+		<div class="bottomdiv">
+			<table style="width:100%;text-align:center;max-width:500px;margin:0 auto" cellpadding="10" class="tbl">
+				<tr id="tr1"></tr>
+				<tr><td style="width:50%"><div class="card" onclick="location.href='https://karucu.com'">
+					<p><img src="icons/hom.png" style="height:50px"></p>
+					<p style="padding:10px 0px;font-weight:bold;font-size:13px;border-bottom:1px solid #ccc">Our Website</p>
+					<p style="color:grey;font-size:13px;padding-top:5px;font-family:arial">About us,Notices & Leadership</p>
+				</div></td>
+				<td><div class="card" onclick="location.href='https://karucu.com/gallery.php'">
+					<p><img src="icons/photo.png" style="height:50px"></p>
+					<p style="padding:10px 0px;font-weight:bold;font-size:13px;border-bottom:1px solid #ccc">Photo Album</p>
+					<p style="color:grey;font-size:13px;padding-top:5px;font-family:arial">Service & Events Photos</p>
+				</div></td></tr>
+				
+				<tr><td style="width:50%"><div class="card" onclick="location.href='https://karucu.com/signup.php'">
+					<p><img src="icons/member.jpg" style="height:50px"></p>
+					<p style="padding:10px 0px;font-weight:bold;font-size:13px;border-bottom:1px solid #ccc">Registration</p>
+					<p style="color:grey;font-size:13px;padding-top:5px;font-family:arial">Join us today & Participate</p>
+				</div></td>
+				<td><div class="card" onclick="location.href='https://karucu.com/bs/registration.php'">
+					<p><img src="icons/bs.png" style="height:50px;"></p>
+					<p style="padding:10px 0px;font-weight:bold;font-size:13px;border-bottom:1px solid #ccc">Bible Study</p>
+					<p style="color:grey;font-size:13px;padding-top:5px;font-family:arial">Register & Join a Group</p>
+				</div></td></tr>
+				
+				<tr><td style="width:50%"><div class="card" onclick="location.href='https://karucu.com/resources.php'">
+					<p><img src="icons/res.jpg" style="height:50px;border-radius:50%"></p>
+					<p style="padding:10px 0px;font-weight:bold;font-size:13px;border-bottom:1px solid #ccc">E- Books</p>
+					<p style="color:grey;font-size:13px;padding-top:5px;font-family:arial">PDF & Word Sermons</p>
+				</div></td>
+				<td><div class="card" onclick="location.href='https://www.facebook.com/karumaincampusculive/'">
+					<p><img src="icons/fb.jpeg" style="height:50px;border-radius:50%"></p>
+					<p style="padding:10px 0px;font-weight:bold;font-size:13px;border-bottom:1px solid #ccc">Facebook Live</p>
+					<p style="color:grey;font-size:13px;padding-top:5px;font-family:arial">Like & Follow for Live updates</p>
+				</div></td></tr>
+				
+				<tr><td colspan="2">
+					<div class="cardv">
+						<h4 style="color:#3CB371">Contact us</h4><br>
+						<img src="icons/call.png" style="height:50px;margin-right:30px" onclick="location.href='tel:+254791621803'">
+						<img src="icons/email.png" style="height:50px;" onclick="location.href='mailto:secretary@karucu.com'">
+					</div>
+				</td></tr>
+			</table><br>
+		</div>
+	</body>
+	</html>
+	
+	<script>
+	
+		(function(){
+			if(navigator.onLine==true){
+				var ajax=new XMLHttpRequest();
+				ajax.onreadystatechange=function(){
+					if(ajax.status==200 && ajax.readyState==4){
+						var res=ajax.responseText;
+						if(res.trim().split("~")[0]=="data"){
+							document.getElementById("tr1").innerHTML="<td colspan='2'><div class='cardv'>"+res.trim().split("~")[1]+"</div></td>";
+						}
+					}
+				}
+				ajax.open("POST","https://karucu.com/admin/dailyverse.php?fetch",true);
+				ajax.send();
+			}
+		}());
+		
+	</script>

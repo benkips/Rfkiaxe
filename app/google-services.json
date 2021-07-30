@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "708260887213",
+    "firebase_url": "https://rafikiconnect-8bc6f.firebaseio.com",
+    "project_id": "rafikiconnect-8bc6f",
+    "storage_bucket": "rafikiconnect-8bc6f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:708260887213:android:48b9bfb11fd47be3942424",
+        "android_client_info": {
+          "package_name": "com.pradytech.rafikiconnect"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "708260887213-5tu58kajt1am4i9bsrtrdlqabcmge8e7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBq6EJ0N-TwkavLR8uchF_1K3NDJpNb5jE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "708260887213-5tu58kajt1am4i9bsrtrdlqabcmge8e7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/launcher">
+
+    <fragment
+        android:id="@+id/launcher"
+        android:name="com.pradytech.rafikiconnect.fragments.Launcher"
+        android:label="fragment_launcher"
+        tools:layout="@layout/fragment_launcher" >
+        <action
+            android:id="@+id/action_launcher_to_switchboard"
+            app:destination="@id/switchboard"
+            app:popUpTo="@id/launcher"
+            app:popUpToInclusive="true"/>
+        <action
+            android:id="@+id/action_launcher_to_wvinfo"
+            app:destination="@id/wvinfo"
+            app:popUpTo="@id/launcher"
+            app:popUpToInclusive="true"/>/>
+    </fragment>
+    <fragment
+        android:id="@+id/login"
+        android:name="com.pradytech.rafikiconnect.fragments.Login"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_login_to_wvinfo"
+            app:destination="@id/wvinfo" />
+        <action
+            android:id="@+id/action_login_to_registration"
+            app:destination="@id/registration" />
+        <action
+            android:id="@+id/action_login_to_lenderRegistration"
+            app:destination="@id/lenderRegistration" />
+        <action
+            android:id="@+id/action_login_to_forgtpass"
+            app:destination="@id/forgtpass" />
+    </fragment>
+    <fragment
+        android:id="@+id/registration"
+        android:name="com.pradytech.rafikiconnect.fragments.Registration"
+        android:label="fragment_registration"
+        tools:layout="@layout/fragment_registration" >
+        <action
+            android:id="@+id/action_registration_to_locationsz"
+            app:destination="@id/locationsz" />
+    </fragment>
+    <fragment
+        android:id="@+id/wvinfo"
+        android:name="com.pradytech.rafikiconnect.fragments.wvinfo"
+        android:label="fragment_wvinfo"
+        tools:layout="@layout/fragment_wvinfo" />
+    <fragment
+        android:id="@+id/switchboard"
+        android:name="com.pradytech.rafikiconnect.fragments.Switchboard"
+        android:label="fragment_switchboard"
+        tools:layout="@layout/fragment_switchboard" >
+        <action
+            android:id="@+id/action_switchboard_to_login"
+            app:destination="@id/login" />
+    </fragment>
+    <fragment
+        android:id="@+id/lenderRegistration"
+        android:name="com.pradytech.rafikiconnect.fragments.LenderRegistration"
+        android:label="fragment_lender_registration"
+        tools:layout="@layout/fragment_lender_registration" >
+        <action
+            android:id="@+id/action_lenderRegistration_to_locationsz"
+            app:destination="@id/locationsz" />
+    </fragment>
+    <fragment
+        android:id="@+id/locationsz"
+        android:name="com.pradytech.rafikiconnect.fragments.Locationsz"
+        android:label="fragment_locationsz"
+        tools:layout="@layout/fragment_locationsz" >
+        <action
+            android:id="@+id/action_locationsz_to_login"
+            app:destination="@id/login" />
+    </fragment>
+    <fragment
+        android:id="@+id/forgtpass"
+        android:name="com.pradytech.rafikiconnect.fragments.forgtpass"
+        android:label="fragment_forgtpass"
+        tools:layout="@layout/fragment_forgtpass" />
+</navigation>

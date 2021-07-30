@@ -1,0 +1,106 @@
+<resources>
+    <string name="app_name">RafikiConnect</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="permission_request">To complete the action, this permission is required; without it we are not able to perform the action; please allow the permission</string>
+    <string name="write_storage">Write Storage</string>
+    <string name="welcomemsg">Welcome to RafikiConnect a platform  that connects you to lenders and borrowers from different location around kenya</string>
+    <string-array name="countyarray">
+        <item>Mombasa</item>
+        <item>Kwale</item>
+        <item>Kilifi</item>
+        <item>Tana River</item>
+        <item>Lamu</item>
+        <item>Taita-Taveta</item>
+        <item>Garissa</item>
+        <item>Wajir</item>
+        <item>Mandera</item>
+        <item>Marsabit</item>
+        <item>Isiolo</item>
+        <item>Meru</item>
+        <item>Tharaka-Nithi</item>
+        <item>Embu</item>
+        <item>Kitui</item>
+        <item>Machakos</item>
+        <item>Makueni</item>
+        <item>Nyandarua</item>
+        <item>Nyeri</item>
+        <item>Kirinyaga</item>
+        <item>Muranga</item>
+        <item>Kiambu</item>
+        <item>Turkana</item>
+        <item>West Pokot</item>
+        <item>Samburu</item>
+        <item>Trans-Nzoia</item>
+        <item>Uasin Gishu</item>
+        <item>Elgeyo-Marakwet</item>
+        <item>Nandi</item>
+        <item>Baringo</item>
+        <item>Laikipia</item>
+        <item>Nakuru</item>
+        <item>Narok</item>
+        <item>Kajiado</item>
+        <item>Kericho</item>
+        <item>Bomet</item>
+        <item>Kakamega</item>
+        <item>Vihiga</item>
+        <item>Bungoma</item>
+        <item>Busia</item>
+        <item>Siaya</item>
+        <item>Kisumu</item>
+        <item>Homa Bay</item>
+        <item>Migori</item>
+        <item>Kisii</item>
+        <item>Nyamira</item>
+        <item>Nairobi</item>
+    </string-array>
+    <string-array name="subcounty">
+        <item>Changamwe,Jomvu,Kisauni,Nyali,Likoni,Mvita</item>
+        <item>Msambweni,Lunga Lunga,Matuga,Kinango</item>
+        <item>Kilifi North,Kilifi South,Kaloleni,Rabai,Ganze,Malindi,Magarini</item>
+        <item>Garsen,Galole,Bura</item>
+        <item>Lamu East,Lamu West</item>
+        <item>Taveta,Wundanyi,Mwatate,Voi</item>
+        <item>Garissa Township,Balambala,Lagdera,Dadaab,Fafi,Ijara</item>
+        <item>Wajir North,Wajir East,Tarbaj,Wajir West,Eldas,Wajir South</item>
+        <item>Mandera West,Banissa,Mandera North,Mandera South,Mandera East,Lafey</item>
+        <item>Moyale,North Horr,Saku,Laisamis</item>
+        <item>Isiolo North,Isiolo South</item>
+        <item>Igembe South,Igembe Central,Igembe North,Tigania West,Tigania East,North Imenti,Buuri,Central Imenti,South Imenti</item>
+        <item>Maara,Chuka,Tharaka</item>
+        <item>Manyatta,Runyenjes,Mbeere South,Mbeere North</item>
+        <item>Mwingi North,Mwingi West,Mwingi Central,Kitui West,Kitui Rural,Kitui Central,Kitui East,Kitui South</item>
+        <item>Masinga,Yatta,Kangundo,Matungulu,Kathiani,Mavoko,Machakos Town,Mwala</item>
+        <item>Mbooni,Kilome,Kaiti,Makueni,Kibwezi West,Kibwezi East</item>
+        <item>Kinangop, Kipipiri,Ol Kalou,Ol Jorok,Ndaragwa</item>
+        <item>Tetu,Kieni,Mathira,Othaya,Mukurweini,Nyeri Town</item>
+        <item>Mwea,Gichugu,Ndia,Kirinyaga Central</item>
+        <item>Kangema,Mathioya,Kiharu,Kigumo,Maragwa,Kandara,Gatanga</item>
+        <item>Gatundu South,Gatundu North,Juja,Thika Town,Ruiru,Githunguri,Kiambu,Kiambaa,Kabete,Kikuyu,Limuru,Lari</item>
+        <item>Turkana North,Turkana West,Turkana Central,Loima,Turkana South,Turkana East</item>
+        <item>Kapenguria,Sigor,Kacheliba,Pokot South</item>
+        <item>Samburu West,Samburu North,Samburu East</item>
+        <item>Kwanza,Endebess,Saboti,Kiminini,Cherangany</item>
+        <item>Soy,Turbo,Moiben,Ainabkoi,Kapseret,Kesses</item>
+        <item>Marakwet East,Marakwet West,Keiyo North,Keiyo South</item>
+        <item>Tinderet,Aldai,Nandi Hills,Chesumei,Emgwen,Mosop</item>
+        <item>Tiaty,Baringo North,Baringo Central,Baringo South,Mogotio,Eldama Ravine</item>
+        <item>Laikipia West,Laikipia East,Laikipia North</item>
+        <item>Molo,Njoro,Naivasha,Gilgil,Kuresoi South,Kuresoi North,Subukia,Rongai,Bahati,Nakuru Town West,Nakuru Town East</item>
+        <item>Kilgoris,Emurua Dikirr,Narok North,Narok East,Narok South,Narok West</item>
+        <item>Kajiado North,Kajiado Central,Kajiado East,Kajiado West,Kajiado South</item>
+        <item>Kipkelion East,Kipkelion West,Ainamoi,Bureti,Belgut,Sigowet–Soin</item>
+        <item>Sotik,Chepalungu,Bomet East,Bomet Central,Konoin</item>
+        <item>Lugari,Likuyani,Malava,Lurambi,Navakholo,Mumias West,Mumias East,Matungu,Butere,Khwisero,Shinyalu,Ikolomani</item>
+        <item>Vihiga,Sabatia,Hamisi,Luanda,Emuhaya</item>
+        <item>Mount Elgon,Sirisia,Kabuchai,Bumula,Kanduyi,Webuye East,Webuye West,Kimilili,Tongaren</item>
+        <item>Teso North,Teso South,Nambale,Matayos,Butula,Funyula,Budalangi</item>
+        <item>Ugenya,Ugunja,Alego Usonga,Gem,Bondo,Rarieda</item>
+        <item>Kisumu East,Kisumu West,Kisumu Central,Seme,Nyando,Muhoroni,Nyakach</item>
+        <item>Kasipul,Kabondo Kasipul,Karachuonyo,Rangwe,Homa Bay Town,Ndhiwa,Mbita,Suba</item>
+        <item>Rongo,Awendo,Suna East,Suna West,Uriri,Nyatike,Kuria West,Kuria East</item>
+        <item>Bonchari,South Mugirango,Bomachoge Borabu,Bobasi,Bomachoge Chache,Nyaribari Masaba,Nyaribari Chache,Kitutu Chache North,Kitutu Chache South</item>
+        <item>Kitutu Masaba,West Mugirango,North Mugirango,Borabu</item>
+        <item>Westlands,Dagoretti North,Dagoretti South,Lang’ata,Kibra,Roysambu,Kasarani,Ruaraka,Embakasi South,Embakasi North,Embakasi Central,Embakasi East,Embakasi,Makadara,Kamukunji,Starehe,Mathare</item>
+    </string-array>
+</resources>
